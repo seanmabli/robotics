@@ -9,7 +9,7 @@ SunLongitude += 360 if SunLongitude < -180 else 0
 SunLongitude -= 360 if SunLongitude > 180 else 0
 SunLatitude = math.degrees(sun.dec)
 
-MyLongitude, MyLatitude = geocoder.ip('me').latlng[0], geocoder.ip('me').latlng[1]
+MyLatitude, MyLongitude = geocoder.ip('me').latlng[0], geocoder.ip('me').latlng[1]
 
 Distance = ((SunLongitude - MyLongitude) ** 2 + (SunLatitude - MyLatitude) ** 2) ** 0.5
 
