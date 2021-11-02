@@ -13,4 +13,4 @@ MyLatitude, MyLongitude = geocoder.ip('me').latlng[0], geocoder.ip('me').latlng[
 
 Distance = ((SunLongitude - MyLongitude) ** 2 + (SunLatitude - MyLatitude) ** 2) ** 0.5
 
-print("The Distance From Us And The Subsolar Point Is:", (Distance / 360) * math.pi * 2 * 6371, "Km")
+print("The Distance From Us And The Subsolar Point Is:", (Distance / 360) * math.pi * 2 * 6371, "Km")`

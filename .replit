@@ -1,2 +1,2 @@
 language = "python3"
-run = "DistanceToSubsolarPoint.py"
+run = "python3 StockWebScraping.py"
