@@ -4,10 +4,10 @@ import math
 
 greenwich = ephem.Observer()
 sun = ephem.Sun(greenwich)
-SunLongitude = 57.2958 * (sun.ra - greenwich.sidereal_time())
+SunLongitude = math.degrees(sun.ra - greenwich.sidereal_time())
 SunLongitude += 360 if SunLongitude < -180 else 0
 SunLongitude -= 360 if SunLongitude > 180 else 0
-SunLatitude = 57.2958 * sun.dec
+SunLatitude = math.degrees(sun.dec)
 
 MyLongitude, MyLatitude = geocoder.ip('me').latlng[0], geocoder.ip('me').latlng[1]
 
