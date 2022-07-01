@@ -30,7 +30,7 @@ while not done:
 
       Row = []
       for i in range(5):
-        Row.append(pygame.draw.rect(Display, (255, 255, 255), (int(i * 100), 0, int(i * 100 + 100), 700),  1))
+        Row.append(pygame.draw.rect(Display, (255, 255, 255), (int(i * 100), 0, 100, 700),  1))
 
       for i in range(6):
         pygame.draw.line(Display, (255, 255, 255), (0, i * 100 + 100), (700, i * 100 + 100))
